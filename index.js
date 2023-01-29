@@ -13,7 +13,6 @@ const team1 = [
 // create a function for calculating salary by category
 const calculateSalaryByCategory = (salaries, specialization, count) => {
     let categoryObj = new Object();
-    // categoryObj.spec = specialization;
     categoryObj[specialization] = (salaries[specialization].salary + salaries[specialization].salary * Number(String(salaries[specialization].tax).slice(0, 2)) / 100) * count;
     return categoryObj
 }
